@@ -1,0 +1,14 @@
+Perguntas
+1- Explique com as suas palavras o que é uma "classe coesa", e quais são as vantagens de classes assim.
+R: Uma classe coesa é aquela que contém apenas uma única responsabilidade. Ou seja, ela toma conta de apenas um conceito dentro do sistema.
+Classes coesas tendem a ser menores, e por consequência, mais fáceis de serem lidas e mantidas. Elas também tendem a ser mais reutilizáveis, afinal são mais fáceis.
+
+2- Como fazer para detectar classes não coesas? Como identificá-las em nosso sistema?
+R: Classes que não são coesas geralmente possuem muitos comportamentos (métodos). Além disso, elas também tem a tendência de crescer pra sempre, ou seja, o tempo inteiro o desenvolvedor tem que por a mão para escrever mais código.
+
+3- Ao encontrarmos uma classe não coesa, a ideia é refatorá-la. Como fazer para que uma classe torne-se coesa?
+R: Uma classe não coesa contém muitas diferentes responsabilidades. A ideia é então separar essas responsabilidades em classes diferentes. Como no caso do vídeo, onde separamos cada regra de cálculo em um lugar separado. Repare também que a classe Funcionario também é coesa, já que ela cuida apenas das responsabilidades e comportamentos de um funcionário.
+Então, encontrou uma classe com muita responsabilidade, divida-a em várias classes menores.
+
+
+E será que conseguimos ver a coesão pelo outro lado? Pense, se a classe A depende de B, idealmente B deve prover uma interface para A, somente com as coisas que A depende. Ou seja, a classe não deve depender de métodos que ela não usa. Isso é o que chamamos de Princípio de Segregação de Interfaces, ou ISP.

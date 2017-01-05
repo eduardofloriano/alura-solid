@@ -1,0 +1,10 @@
+Perguntas
+1- Por que acoplamento é tão perigoso em projetos orientados a objetos?
+R: O problema do acoplamento é que, a partir do momento que uma classe A depende de uma classe B, qualquer mudança em B pode impactar A. Ou seja, quanto mais dependermos de outras classes, mais chances temos de uma mudança na dependência afetar a classe dependente. E, como sabemos, na prática, temos classes que mudam com muita frequência.
+
+2- O que são classes estáveis? E como fazer para criar classes como essas em nosso sistema?
+R: Classes estáveis são aquelas que tendem a mudar muito pouco. A vantagem de classes como essas é que são ótimas classes para se depender, já que elas não propagarão mudança para as classes dependentes.
+Classes estáveis são aquelas que geralmente já são dependidas por muitas outras classes do sistema. Um bom exemplo disso são interfaces, pois elas geralmente possuem muitas implementações, e aí isso faz com que o desenvolvedor pense melhor antes de sair mudando a interface.
+
+3- Como fazer para resolver o problema do acoplamento?
+R: A ideia é refatorar as classes para elas, quando necessitem de uma dependência, dependam de classes estáveis. Assim, a classe estará segura em relação a propagação de mudanças. É por isso que falamos muito sobre a ideia de "programar para interfaces", afinal, interfaces, além de nos possibilitar o uso de polimorfismo, ainda são estáveis.
