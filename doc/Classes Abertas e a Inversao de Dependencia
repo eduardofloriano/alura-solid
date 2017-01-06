@@ -1,0 +1,12 @@
+Perguntas
+1- Como o princípio do OCP nos ajuda a escrever classes mais flexíveis?
+R: O OCP diz para escrevermos classes que sejam facilmente extensíveis (ou seja, abertas pra extensão). Dessa forma, mudar o comportamento da classe atual é fácil: basta passar outras implementações concretas das abstrações que ela depende.
+Classes abertas para extensão, mas fechadas para modificação, também são mais coesas.
+
+2- O que é o DIP? E qual a vantagem de sempre depender de classes estáveis?
+R: O DIP nos diz para sempre dependermos de módulos que sejam mais estáveis que o módulo corrente. Abstrações devem depender de abstrações, e implementação deve depender de abstração.
+Com isso, diminuímos o risco do acoplamento, afinal abstrações são estáveis, e tendem a não mudar frequentemente, diminuindo a propagação de problemas.
+
+3- Na sua opinião, como o OCP e o DIP se relacionam?
+R: Ao pensar em classes abertas, o programador precisa pensar em abstrações. Afinal, é por meio delas que ele vai conseguir estender o comportamento.
+Ao pensar em abstrações, idealmente o programador também pensa na estabilidade de cada uma dessas abstrações. Afinal, ele precisa gerenciar o problema do acoplamento.
