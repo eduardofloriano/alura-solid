@@ -1,0 +1,8 @@
+Perguntas
+1- Por que fazer bom uso de herança é difícil?
+R: Porque para se fazer bom uso de herança, o desenvolvedor deve pensar em cada método que a classe filha herdou e sobrescreveu, e lembrar que as pré-condições não podem ser apertadas, e as pós-condições não podem serem afrouxadas.
+Isso não é tão simples, e requer muito raciocínio do desenvolvedor, sempre que for reescrever um comportamento.
+
+2- Qual a alternativa para se reaproveitar comportamento, sem fazer uso de herança?
+R: Você pode fazer uso de composição para reaproveitar comportamentos. Diferente da herança, ao compor um objeto, você não precisa se preocupar com as pré e pós condições.
+No entanto, ao fazer uso de herança, você ganha o uso de polimorfismo. Quando bem usada, a herança também é uma excelente opção.
