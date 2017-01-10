@@ -1,0 +1,11 @@
+Perguntas
+1- Escreva com suas palavras o que é "encapsulamento".
+R: Encapsular é esconder os detalhes da implementação dentro da classe. Dessa forma, as classes que farão uso dela, não saberão como ela funciona internamente. A vantagem disso é que conseguimos depois facilmente alterar a implementação, sem que ela impacte nas classes dependentes.
+
+2- Como fazer para descobrir se um código está encapsulado ou não?
+R: Uma alternativa para isso é criar um trecho de código (seja uma nova classe, ou mesmo um teste automatizado) e fazer uso da classe. Nesse código, você deverá o tempo todo se fazer a pergunta: "Consigo saber COMO a classe está implementando essa regra de negócio?". Se a resposta for sim, então aquele comportamento não está bem encapsulado.
+
+
+3- O que é a tal da Lei de Demeter? O que o desenvolvedor ganha quando a segue?
+R: A Lei de Demeter, de maneira simples, diz para que você evite ao máximo fazer expressões como a.getB().getC().getD().acao(). O problema dessa cadeia, é que a classe que contém essa expressão, conhece muito sobre o comportamento da classe A, depois da classe B, até D. Se alguma delas mudar, a mudança será propagada para muitos lugares.
+Diminuir a quantidade de invocações como essas ajuda você a encapsular melhor o comportamento e o funcionamento interno das classes.
